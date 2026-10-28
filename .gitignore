@@ -1,0 +1,56 @@
+# Python virtual environment
+venv/
+env/
+
+#project related files/folders
+
+# dropping stuff inside outputs folder but retaining the folder itself
+outputs/*
+!outputs/.gitkeep
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution/packaging
+dist/
+build/
+*.egg-info/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# Local development settings
+*.log
+
+# Model files and directories
+outputs/model/
+*.pth
+*.pkl
+*.joblib
+
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.DS_Store
+
+# Caterpillar Inc. proprietary weather data: retain notices only
+/data/*
+!/data/README.md
+/src/utils/Clustering/Data/*
+!/src/utils/Clustering/Data/README.md
+*.vtk
+
+# Generated previews embed weather point-cloud data
+/src/utils/Exploration/isualisePolyDataObjectInDynamic3D.html
+/src/utils/Exploration/visualisePolyDataObjectInDynamic3D.html
